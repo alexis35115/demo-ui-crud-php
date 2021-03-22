@@ -34,7 +34,7 @@ $film = $sth->fetch();
 			<p><?=$film['resume']?></p>
 			</br>
 			<p><?=$film['description']?></p>
-			<img src="images/<?=$film['image']?>" class="center">
+			<img src="images/<?=$film['image']?>" class="centrer">
 		</div>
 	</section>
 	<?php

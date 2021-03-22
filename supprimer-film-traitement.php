@@ -19,7 +19,7 @@
         $sth = $dbh->prepare("DELETE FROM `film` WHERE `id_film` = :id");
         $sth->bindParam(':id', $idFilm, PDO::PARAM_INT);
         ?>
-        <div class="center centrer-text">
+        <div class="centrer centrer-text">
         <?php
         if ($sth->execute()) {
             echo("Succès lors de la suppression du film.");
