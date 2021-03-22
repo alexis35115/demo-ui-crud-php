@@ -4,7 +4,7 @@ $idFilm = $_GET['id_film'];
 
 include "connexion.php";
 
-$sth = $dbh->prepare("SELECT titre, realisateur, resume, description, image FROM film WHERE id_film = :id");
+$sth = $dbh->prepare("SELECT `id_film`, `titre`, `realisateur`, `resume`, `description`, `image` FROM `film` WHERE `id_film` = :id");
 $sth->bindParam(':id', $idFilm, PDO::PARAM_INT);
 $sth->execute();
 $film = $sth->fetch();
@@ -24,7 +24,9 @@ $film = $sth->fetch();
 	<?php
 	include "en-tete.php";
 	?>
-
+	<div class="espacement">
+		<a href="supprimer-film-traitement.php?id_film=<?=$film['id_film']?>" title="">Supprimer ce film</a>
+	</div>
 	<section id="contenu">
 		<div class="espacement">
 			<h4><?=$film['titre']?></h4>
