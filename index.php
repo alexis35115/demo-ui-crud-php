@@ -22,7 +22,7 @@
 	?>
 		<div class="liste-film espacement">
 			<h4>
-			<a href="film.php?id_film=<?=$film['id_film']?>" title=""><?=$film['titre']?></a>
+			<a href="film-detail.php?id_film=<?=$film['id_film']?>" title=""><?=$film['titre']?></a>
 			</h4>
 			<span><?=$film['realisateur']?></span>
 			<p><?=$film['resume']?></p>
