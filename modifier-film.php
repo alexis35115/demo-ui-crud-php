@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles/style.css">
-    <title>Créer un film</title>
+    <title>Modifier un film</title>
 </head>
 <body>
 	<?php
@@ -13,8 +13,8 @@
     ?>
 
     <section>
-		<h2>Ajouter un film</h2>
-		<form action="creer-film-traitement.php" method="post">
+		<h2>Modifier le film</h2>
+		<form action="modifier-film-traitement.php" method="post">
 			<div>
 				<label for="titre">Titre</label>
 				<input type="text" name="titre" id="titre"/>			
@@ -35,7 +35,8 @@
 				<label for="image">Nom du fichier de l'image</label>
 				<input type="text" name="image" id="image"/>		
 			</div>					
-			<input type="submit" value="Créer le film">
+			<input type="submit" value="Modifier le film">
+            <input type="hidden" name="id_film" value="<?=$_GET['id_film']?>"/>
 		</form>
 	</section>
 
