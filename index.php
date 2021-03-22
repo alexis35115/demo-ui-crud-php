@@ -13,7 +13,7 @@
 
 	include "connexion.php"; 
 
-	$sth = $dbh->prepare("SELECT id_film, titre, realisateur, resume from film;");
+	$sth = $dbh->prepare("SELECT `id_film`, `titre`, `realisateur`, `resume` from `film`;");
 	$sth->execute();
 	$films = $sth->fetchAll();
 
