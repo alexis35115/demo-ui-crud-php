@@ -26,7 +26,7 @@ $film = $sth->fetch();
 	?>
 	<div class="espacement">
 		<a href="supprimer-film-traitement.php?id_film=<?=$film['id_film']?>" title="">Supprimer ce film</a> |
-		<a href="modifier-film-traitement.php?id_film=<?=$film['id_film']?>" title="">Modifier ce film</a> |
+		<a href="modifier-film.php?id_film=<?=$film['id_film']?>" title="">Modifier ce film</a> |
 	</div>
 	<section id="contenu">
 		<div class="espacement">
