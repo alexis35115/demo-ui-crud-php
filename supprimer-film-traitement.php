@@ -16,7 +16,7 @@
     include "connexion.php";
 
     try {
-        $sth = $dbh->prepare("DELETE FROM `film` WHERE `id_film` = :id");
+        $sth = $dbh->prepare("DELETE FROM `film` WHERE `id_film` = :id;");
         $sth->bindParam(':id', $idFilm, PDO::PARAM_INT);
         ?>
         <div class="centrer centrer-text">
