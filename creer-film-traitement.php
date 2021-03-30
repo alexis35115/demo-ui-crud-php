@@ -32,7 +32,7 @@
         </div>
         <?php
     } catch (\Throwable $e) {
-        echo("Erreur lors de la mise à jour du film.");
+        echo("Erreur lors de la création du film.");
         echo($e->getMessage());
     }
 
